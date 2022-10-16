@@ -1,6 +1,6 @@
 <?php
- $zbii = $_SERVER['REMOTE_ADDR'];
-$geoip = 'http://www.geoplugin.net/php.gp?ip='.$zbii;
+ $cpa = $_SERVER['REMOTE_ADDR'];
+$geoip = 'http://www.geoplugin.net/php.gp?ip='.$cpa;
 $addrDetailsArr = unserialize(file_get_contents($geoip)); 
  $country = $addrDetailsArr['geoplugin_countryName'];
 
